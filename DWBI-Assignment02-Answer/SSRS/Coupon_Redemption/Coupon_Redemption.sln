@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Coupon_Redemption", "Coupon_Redemption\Coupon_Redemption.rptproj", "{9C95A638-2F36-4ACE-8DE7-314C92970CEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.Debug|Default.ActiveCfg = Debug
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.Debug|Default.Build.0 = Debug
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.Debug|Default.Deploy.0 = Debug
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.DebugLocal|Default.Build.0 = DebugLocal
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.Release|Default.ActiveCfg = Release
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.Release|Default.Build.0 = Release
+		{9C95A638-2F36-4ACE-8DE7-314C92970CEC}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A83BB887-0B0F-4C0D-8EB5-B34DCBCEEEE8}
+	EndGlobalSection
+EndGlobal

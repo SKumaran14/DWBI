@@ -1,0 +1,2698 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{D2267A11-C385-4EAB-8354-CDCBB4065B84}" Name="KUMARAN.Coupon_Redemption_Staging">
+      <DtsConnectionManagerID>KUMARAN.Coupon_Redemption_Staging</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{3C389F9B-BD87-42BC-9841-059C3A986F14}" Name="Profiler_output">
+      <DtsConnectionManagerID>Profiler_output</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCampaignData" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCampaignData" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCampaignData" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCampaignData" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCampaignData" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerDemographics" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerDemographics" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerDemographics" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerDemographics" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerDemographics" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerTransactionData" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerTransactionData" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerTransactionData" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerTransactionData" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomerTransactionData" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrain" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrain" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrain" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrain" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrain" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrainSub" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrainSub" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrainSub" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrainSub" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table Schema="dbo" Table="StgTrainSub" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq3" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq3" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq3" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq3" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="redemption_status" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>128595</MaxValue>
+        <Mean>64347.9754494762</Mean>
+        <StdDev>37126.2039848584</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>30</MaxValue>
+        <Mean>13.9744414245429</Mean>
+        <StdDev>8.01916337004517</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>1582</MaxValue>
+        <Mean>787.451887863824</Mean>
+        <StdDev>456.808424444938</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="redemption_status" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>0</MinValue>
+        <MaxValue>1</MaxValue>
+        <Mean>0.00930214753282548</Mean>
+        <StdDev>0.0959980082298744</StdDev>
+      </ColumnStatisticsProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <KeyColumns>
+          <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>78369</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>18</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>29</Value>
+            <Count>3895</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>9</Value>
+            <Count>3168</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3</Value>
+            <Count>408</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>26</Value>
+            <Count>6056</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>12</Value>
+            <Count>2550</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>27</Value>
+            <Count>324</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>7</Value>
+            <Count>1584</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>143</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>30</Value>
+            <Count>6467</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>10</Value>
+            <Count>1723</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4</Value>
+            <Count>972</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>13</Value>
+            <Count>22606</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5</Value>
+            <Count>1827</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2</Value>
+            <Count>768</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>11</Value>
+            <Count>2782</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>28</Value>
+            <Count>476</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>8</Value>
+            <Count>22555</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>1428</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>570</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>23</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1472</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>46</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>378</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1543</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>401</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1520</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>733</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>524</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>501</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>430</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>384</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>802</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1071</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>825</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>407</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>919</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1357</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>418</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1549</Value>
+            <Count>136</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1157</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>344</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>865</Value>
+            <Count>144</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>793</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>464</Value>
+            <Count>171</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1457</Value>
+            <Count>150</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1555</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>679</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>15</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>181</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>607</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1320</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1463</Value>
+            <Count>199</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1291</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1334</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>338</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>195</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1191</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1383</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>301</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>550</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>636</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>295</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>444</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>72</Value>
+            <Count>133</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>189</Value>
+            <Count>175</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1469</Value>
+            <Count>110</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>876</Value>
+            <Count>124</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>235</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1014</Value>
+            <Count>125</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>859</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>375</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>659</Value>
+            <Count>127</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>573</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>327</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>667</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>619</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>275</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>962</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>959</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1174</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>510</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1529</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1386</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1460</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1337</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>484</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>553</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>63</Value>
+            <Count>164</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1366</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1429</Value>
+            <Count>132</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1025</Value>
+            <Count>137</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>398</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>633</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>590</Value>
+            <Count>193</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>490</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1231</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1092</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1140</Value>
+            <Count>138</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1017</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>923</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1046</Value>
+            <Count>118</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>113</Value>
+            <Count>121</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1441</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>184</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>754</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1547</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1215</Value>
+            <Count>130</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1309</Value>
+            <Count>140</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>814</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1246</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1412</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1152</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>891</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>413</Value>
+            <Count>128</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>797</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1146</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>38</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1418</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>207</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>648</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1238</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>634</Value>
+            <Count>118</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>7</Value>
+            <Count>125</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1332</Value>
+            <Count>128</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>293</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>834</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1375</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1258</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>711</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1398</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>402</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>141</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>93</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1544</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1444</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>525</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1467</Value>
+            <Count>134</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>310</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>974</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>233</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>479</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>874</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>611</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>362</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1252</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>316</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1298</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>519</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>957</Value>
+            <Count>153</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1060</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>565</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>911</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1550</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1223</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>745</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1458</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>725</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1464</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1341</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1192</Value>
+            <Count>173</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>943</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>196</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>90</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1086</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1372</Value>
+            <Count>116</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1029</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1521</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>737</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1378</Value>
+            <Count>161</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>712</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1044</Value>
+            <Count>130</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>119</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1115</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>474</Value>
+            <Count>123</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>875</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1516</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>998</Value>
+            <Count>125</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1167</Value>
+            <Count>150</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>234</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>706</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>19</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1347</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>265</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>958</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>520</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>858</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>171</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>566</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>271</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>368</Value>
+            <Count>125</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>795</Value>
+            <Count>127</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1387</Value>
+            <Count>160</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>179</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1224</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>626</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>460</Value>
+            <Count>136</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>136</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>677</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>42</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1430</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1324</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>732</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1473</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>740</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1573</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>99</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>262</Value>
+            <Count>134</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1164</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>191</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>408</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1490</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>162</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1072</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1095</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>231</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1064</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1310</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1450</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>709</Value>
+            <Count>116</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1012</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>417</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>222</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>866</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1198</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>772</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>437</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1556</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1290</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>88</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1241</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>823</Value>
+            <Count>116</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>749</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1170</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1121</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>992</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>586</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1333</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>302</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1384</Value>
+            <Count>142</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>537</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>294</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>686</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>637</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>973</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1259</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>927</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>595</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1236</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>240</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1142</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1165</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>186</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>432</Value>
+            <Count>136</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>455</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1311</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1405</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>363</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1497</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1159</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1351</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>269</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>910</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>724</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1079</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>844</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>867</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1534</Value>
+            <Count>149</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1485</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>183</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>675</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1477</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>91</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>103</Value>
+            <Count>80</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>495</Value>
+            <Count>110</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1036</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>489</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>787</Value>
+            <Count>154</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>569</Value>
+            <Count>150</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>498</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1093</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>924</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>283</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1216</Value>
+            <Count>153</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>575</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1408</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>412</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>621</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>561</Value>
+            <Count>116</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>964</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1007</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1402</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>369</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>615</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>131</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1388</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1296</Value>
+            <Count>110</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>555</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1368</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>698</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1339</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>578</Value>
+            <Count>82</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>386</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1239</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>435</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>8</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>598</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>151</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1574</Value>
+            <Count>126</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq3">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrain" RowCount="78369" />
+        <Column Name="redemption_status" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>0</Value>
+            <Count>77640</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>729</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq4" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq4" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="date" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq4" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="category" SqlDbType="NVarChar" MaxLength="500" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq4" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="brand_type" SqlDbType="NVarChar" MaxLength="500" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>128595</MaxValue>
+        <Mean>64347.9754494762</Mean>
+        <StdDev>37126.2039848584</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="date" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>2012-01-02T00:00:00.0000000</MinValue>
+        <MaxValue>2012-03-29T00:00:00.0000000</MaxValue>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq4" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="category" SqlDbType="NVarChar" MaxLength="500" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>16</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>4439</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>33850</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>3754</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>13</Length>
+            <Count>4428</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>5795</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>78</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>26025</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq4" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="brand_type" SqlDbType="NVarChar" MaxLength="500" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>5</MinLength>
+        <MaxLength>29</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>23</Length>
+            <Count>142</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>29</Length>
+            <Count>2388</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>11225</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>64614</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <KeyColumns>
+          <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>78369</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="date" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>88</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>2012-02-22T00:00:00.0000000</Value>
+            <Count>851</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-30T00:00:00.0000000</Value>
+            <Count>712</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-16T00:00:00.0000000</Value>
+            <Count>2021</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-22T00:00:00.0000000</Value>
+            <Count>1690</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-05T00:00:00.0000000</Value>
+            <Count>748</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-08T00:00:00.0000000</Value>
+            <Count>628</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-02T00:00:00.0000000</Value>
+            <Count>1162</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-25T00:00:00.0000000</Value>
+            <Count>808</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-19T00:00:00.0000000</Value>
+            <Count>488</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-13T00:00:00.0000000</Value>
+            <Count>535</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-19T00:00:00.0000000</Value>
+            <Count>866</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-13T00:00:00.0000000</Value>
+            <Count>1412</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-02T00:00:00.0000000</Value>
+            <Count>177</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-19T00:00:00.0000000</Value>
+            <Count>1454</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-02T00:00:00.0000000</Value>
+            <Count>627</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-11T00:00:00.0000000</Value>
+            <Count>888</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-25T00:00:00.0000000</Value>
+            <Count>1562</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-22T00:00:00.0000000</Value>
+            <Count>579</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-10T00:00:00.0000000</Value>
+            <Count>249</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-28T00:00:00.0000000</Value>
+            <Count>961</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-16T00:00:00.0000000</Value>
+            <Count>308</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-14T00:00:00.0000000</Value>
+            <Count>1433</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-05T00:00:00.0000000</Value>
+            <Count>335</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-28T00:00:00.0000000</Value>
+            <Count>503</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-20T00:00:00.0000000</Value>
+            <Count>882</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-20T00:00:00.0000000</Value>
+            <Count>1411</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-03T00:00:00.0000000</Value>
+            <Count>978</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-14T00:00:00.0000000</Value>
+            <Count>672</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-08T00:00:00.0000000</Value>
+            <Count>1751</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-17T00:00:00.0000000</Value>
+            <Count>347</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-11T00:00:00.0000000</Value>
+            <Count>291</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-17T00:00:00.0000000</Value>
+            <Count>1630</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-11T00:00:00.0000000</Value>
+            <Count>1102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-23T00:00:00.0000000</Value>
+            <Count>1121</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-17T00:00:00.0000000</Value>
+            <Count>1268</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-25T00:00:00.0000000</Value>
+            <Count>482</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-31T00:00:00.0000000</Value>
+            <Count>647</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-06T00:00:00.0000000</Value>
+            <Count>940</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-28T00:00:00.0000000</Value>
+            <Count>1494</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-26T00:00:00.0000000</Value>
+            <Count>823</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-08T00:00:00.0000000</Value>
+            <Count>277</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-05T00:00:00.0000000</Value>
+            <Count>847</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-14T00:00:00.0000000</Value>
+            <Count>400</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-12T00:00:00.0000000</Value>
+            <Count>1398</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-18T00:00:00.0000000</Value>
+            <Count>878</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-26T00:00:00.0000000</Value>
+            <Count>844</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-12T00:00:00.0000000</Value>
+            <Count>738</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-01T00:00:00.0000000</Value>
+            <Count>637</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-26T00:00:00.0000000</Value>
+            <Count>1504</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-09T00:00:00.0000000</Value>
+            <Count>243</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-29T00:00:00.0000000</Value>
+            <Count>1014</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-06T00:00:00.0000000</Value>
+            <Count>1322</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-06T00:00:00.0000000</Value>
+            <Count>122</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-23T00:00:00.0000000</Value>
+            <Count>379</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-29T00:00:00.0000000</Value>
+            <Count>405</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-21T00:00:00.0000000</Value>
+            <Count>925</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-15T00:00:00.0000000</Value>
+            <Count>1773</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-15T00:00:00.0000000</Value>
+            <Count>720</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-23T00:00:00.0000000</Value>
+            <Count>2261</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-09T00:00:00.0000000</Value>
+            <Count>1103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-20T00:00:00.0000000</Value>
+            <Count>613</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-09T00:00:00.0000000</Value>
+            <Count>1616</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-12T00:00:00.0000000</Value>
+            <Count>547</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-03T00:00:00.0000000</Value>
+            <Count>1043</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-24T00:00:00.0000000</Value>
+            <Count>464</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-18T00:00:00.0000000</Value>
+            <Count>1517</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-16T00:00:00.0000000</Value>
+            <Count>1002</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-24T00:00:00.0000000</Value>
+            <Count>1499</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-10T00:00:00.0000000</Value>
+            <Count>954</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-07T00:00:00.0000000</Value>
+            <Count>512</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-27T00:00:00.0000000</Value>
+            <Count>1467</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-15T00:00:00.0000000</Value>
+            <Count>424</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-21T00:00:00.0000000</Value>
+            <Count>392</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-27T00:00:00.0000000</Value>
+            <Count>858</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-10T00:00:00.0000000</Value>
+            <Count>1561</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-07T00:00:00.0000000</Value>
+            <Count>197</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-04T00:00:00.0000000</Value>
+            <Count>991</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-27T00:00:00.0000000</Value>
+            <Count>556</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-04T00:00:00.0000000</Value>
+            <Count>294</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-21T00:00:00.0000000</Value>
+            <Count>1378</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-13T00:00:00.0000000</Value>
+            <Count>690</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-04T00:00:00.0000000</Value>
+            <Count>727</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-02-24T00:00:00.0000000</Value>
+            <Count>1254</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-07T00:00:00.0000000</Value>
+            <Count>1357</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-01-18T00:00:00.0000000</Value>
+            <Count>507</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2012-03-01T00:00:00.0000000</Value>
+            <Count>1234</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="category" SqlDbType="NVarChar" MaxLength="500" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>19</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Miscellaneous</Value>
+            <Count>451</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Prepared Food</Value>
+            <Count>1919</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Seafood</Value>
+            <Count>754</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Packaged Meat</Value>
+            <Count>2058</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Skin &amp; Hair Care</Value>
+            <Count>2257</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Flowers &amp; Plants</Value>
+            <Count>742</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>"Dairy</Value>
+            <Count>2530</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Pharmaceutical</Value>
+            <Count>26025</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Meat</Value>
+            <Count>3740</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Alcohol</Value>
+            <Count>343</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Bakery</Value>
+            <Count>1748</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Garden</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Natural Products</Value>
+            <Count>2789</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Grocery</Value>
+            <Count>32753</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq4">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgTrainSub" RowCount="78369" />
+        <Column Name="brand_type" SqlDbType="NVarChar" MaxLength="500" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>4</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Local</Value>
+            <Count>11225</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Established</Value>
+            <Count>64614</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value> Juices &amp; Snacks",Established</Value>
+            <Count>2388</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value> Juices &amp; Snacks",Local</Value>
+            <Count>142</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="quantity" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="other_discount" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="coupon_discount" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="Total" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>2000</MaxValue>
+        <Mean>1000.5</Mean>
+        <StdDev>577.350197020838</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="quantity" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>16482</MaxValue>
+        <Mean>242.8465</Mean>
+        <StdDev>1734.92759703042</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="other_discount" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>0.0000</MinValue>
+        <MaxValue>462.7000</MaxValue>
+        <Mean>26.4554949999999</Mean>
+        <StdDev>57.3216233210032</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="coupon_discount" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>0.0000</MinValue>
+        <MaxValue>80.1400</MaxValue>
+        <Mean>0.30988</Mean>
+        <StdDev>3.45505436796586</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="Total" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>7.1200</MinValue>
+        <MaxValue>1530.9500</MaxValue>
+        <Mean>140.578375</Mean>
+        <StdDev>184.549705257443</StdDev>
+      </ColumnStatisticsProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <KeyColumns>
+          <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerTransactionData" RowCount="2000" />
+        <Column Name="quantity" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>15</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>5101</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3</Value>
+            <Count>66</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>9220</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>32</Value>
+            <Count>9</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>6</Value>
+            <Count>18</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>1515</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>14588</Value>
+            <Count>9</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4</Value>
+            <Count>46</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>9345</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2</Value>
+            <Count>299</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>16482</Value>
+            <Count>9</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <Column Name="campaign_type" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>30</MaxValue>
+        <Mean>15.5714285714286</Mean>
+        <StdDev>8.9539638924755</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <Column Name="campaign_type" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>1</MinLength>
+        <MaxLength>1</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>1</Length>
+            <Count>28</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <KeyColumns>
+          <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <Column Name="campaign_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>28</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>6</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>7</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>8</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>9</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>10</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>11</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>12</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>13</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>16</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>17</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>19</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>20</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>21</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>23</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>24</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>25</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>26</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>27</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>28</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>29</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>30</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCampaignData" RowCount="28" />
+        <Column Name="campaign_type" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>X</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Y</Value>
+            <Count>22</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="age_range" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="marital_status" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="rented" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="family_size" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="income_bracket" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>2000</MaxValue>
+        <Mean>1000.5</Mean>
+        <StdDev>577.350197020838</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="rented" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>0</MinValue>
+        <MaxValue>1</MaxValue>
+        <Mean>0.058</Mean>
+        <StdDev>0.233743449106066</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="income_bracket" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>12</MaxValue>
+        <Mean>4.7415</Mean>
+        <StdDev>2.2907810349311</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="age_range" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>3</MinLength>
+        <MaxLength>5</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>3</Length>
+            <Count>170</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1830</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="marital_status" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>6</MinLength>
+        <MaxLength>7</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>490</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>1510</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="family_size" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>1</MinLength>
+        <MaxLength>2</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>1</Length>
+            <Count>1842</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>2</Length>
+            <Count>158</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <KeyColumns>
+          <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="customer_id" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="age_range" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>6</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>36-45</Value>
+            <Count>489</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>56-70</Value>
+            <Count>156</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>70+</Value>
+            <Count>170</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18-25</Value>
+            <Count>118</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>46-55</Value>
+            <Count>708</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>26-35</Value>
+            <Count>359</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="marital_status" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Single</Value>
+            <Count>490</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Married</Value>
+            <Count>1510</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="rented" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>0</Value>
+            <Count>1884</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>116</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="family_size" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>2</Value>
+            <Count>798</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3</Value>
+            <Count>275</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4</Value>
+            <Count>127</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5+</Value>
+            <Count>158</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>642</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{D2267A11-C385-4EAB-8354-CDCBB4065B84}</DataSourceID>
+        <Table DataSource="KUMARAN" Database="Coupon_Redemption_Staging" Schema="dbo" Table="StgCustomerDemographics" RowCount="2000" />
+        <Column Name="income_bracket" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>12</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>9</Value>
+            <Count>77</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3</Value>
+            <Count>171</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>12</Value>
+            <Count>22</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>6</Value>
+            <Count>238</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>7</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1</Value>
+            <Count>157</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>10</Value>
+            <Count>33</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4</Value>
+            <Count>426</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5</Value>
+            <Count>482</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2</Value>
+            <Count>190</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>11</Value>
+            <Count>19</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>8</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>

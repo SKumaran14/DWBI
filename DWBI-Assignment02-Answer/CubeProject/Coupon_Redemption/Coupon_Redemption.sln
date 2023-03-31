@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Coupon_Redemption", "Coupon_Redemption\Coupon_Redemption.dwproj", "{77001A7C-27B5-454B-B986-36B891A20264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77001A7C-27B5-454B-B986-36B891A20264}.Development|Default.ActiveCfg = Development
+		{77001A7C-27B5-454B-B986-36B891A20264}.Development|Default.Build.0 = Development
+		{77001A7C-27B5-454B-B986-36B891A20264}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DF383AC-F26F-43B2-A860-CA4CDD0C5CB7}
+	EndGlobalSection
+EndGlobal
